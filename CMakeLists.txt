@@ -5,7 +5,7 @@ set(PROJECT_VERSION 5.0)
 option(SUPERCHIC_ENABLE_TESTS        "Enables building of tests." OFF)
 option(SUPERCHIC_ENABLE_FPES         "Enables FPEs." OFF)
 option(SUPERCHIC_ENABLE_DOCS         "Enables compilation of manual." OFF)
-option(SUPERCHIC_ENABLE_SHARED       "Enables compilation of shared library." OFF)
+option(SUPERCHIC_ENABLE_SHARED       "Enables compilation of shared library." ON)
 option(SUPERCHIC_INSTALL_LIBRARIES   "Enables installation of libraries." OFF)
 
 include("GNUInstallDirs")
