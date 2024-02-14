@@ -2,9 +2,6 @@ name: build
 on:
  push:
  pull_request:
- schedule:
-#Every 50 days at midnight 
-    - cron:  "0 0 1/600 * *"
 
 jobs:
   Fedora37x86_64_GNU:
