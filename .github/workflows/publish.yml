@@ -49,8 +49,8 @@ jobs:
               cd work
               dnf -y install epel-release
               dnf -y install  gcc gcc-c++ gcc-gfortran make wget which cmake cmake-data cmake-filesystem lhapdf lhapdf-devel pythia8 pythia8-devel pythia8-lhapdf HepMC3-devel HepMC-devel
-              cmake -S . -B BUILD -DCMAKE_INSTALL_PREFIX=$(pwd)/../INSTALL  -DCMAKE_Fortran_FLAGS=-O2 -DSUPERCHIC_ENABLE_TESTS=ON -DSUPERCHIC_DOWNLOAD_PDFS=ON
-              cmake --build BUILD -j
+              cmake -S . -B BUILD -DCMAKE_INSTALL_PREFIX=$(pwd)/../INSTALL  -DCMAKE_Fortran_FLAGS=-O2 -DSUPERCHIC_ENABLE_TESTS=ON -DSUPERCHIC_DOWNLOAD_PDFS=ON -DSUPERCHIC_INSTALL_LIBRARIES=ON
+              cmake --build BUILD -j 2
               cmake --install BUILD
               #ctest --test-dir BUILD -j 2 --output-on-failure
 
